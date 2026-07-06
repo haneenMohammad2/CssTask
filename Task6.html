@@ -1,0 +1,268 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <title>Task3</title>
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      .container {
+          display: flex;
+          height: 100vh;
+      }
+
+      .first {
+          flex: 1;
+          background: orange;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      .second {
+          flex: 1;
+          background: blue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      h1 {
+          color: white;
+          font-size: 50px;
+          font-family: Georgia, serif;
+      }
+      /* =====================
+           Exercise 2
+        ====================== */
+
+      .gallery {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 10px;
+          padding: 20px;
+      }
+
+          .gallery img {
+              width: calc(33.33% - 7px);
+              height: 200px;
+              object-fit: cover;
+              display: block;
+          }
+      /* Task 3 */
+
+      .boxes {
+          display: flex;
+          flex-wrap: wrap;
+          border: 8px solid goldenrod;
+          margin: 20px;
+      }
+
+      .box {
+          flex: 0 0 25%;
+          height: 140px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 80px;
+          font-family: Georgia, serif;
+      }
+
+      .b1 {
+          background: #27c1ab;
+      }
+
+      .b2 {
+          background: #4396d6;
+      }
+
+      .b3 {
+          background: #9b59b6;
+      }
+
+      .b4 {
+          background: #34495e;
+      }
+
+      .b5 {
+          background: #f1c40f;
+      }
+
+      .b6 {
+          background: #f39c12;
+      }
+
+      .b7 {
+          background: #e74c3c;
+      }
+
+      .b8 {
+          background: #bdc3c7;
+      }
+
+      .b9 {
+          background: #2ecc71;
+      }
+
+      .b10 {
+          background: #16a085;
+      }
+      /* Task 4 */
+      .grid-box {
+          display: grid;
+          grid-template-columns: 2fr 1fr;
+          grid-template-rows: 80px 300px 150px;
+          gap: 15px;
+          margin: 20px;
+      }
+
+      .black {
+          background: black;
+          grid-column: 1 / 3;
+      }
+
+      .orange {
+          background: orange;
+      }
+
+      .green {
+          background: green;
+      }
+
+      .blue {
+          background: blue;
+          grid-column: 1 / 3;
+      }
+      /* Task 5 */
+
+      .colors {
+          display: flex;
+          height: 100vh;
+          margin: 20px;
+          border: 6px solid goldenrod;
+      }
+
+      .item {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          color: white;
+          font-size: 70px;
+          font-family: Georgia, serif;
+          padding-top: 15px;
+      }
+
+      .c1 {
+          background: green;
+      }
+
+      .c2 {
+          background: yellow;
+          color: white;
+      }
+
+      .c3 {
+          background: purple;
+      }
+
+      .c4 {
+          background: gray;
+      }
+
+      .c5 {
+          background: blue;
+      }
+
+      .c6 {
+          background: orange;
+      }
+
+      .c7 {
+          background: pink;
+      }
+
+      .c8 {
+          background: red;
+      }
+
+      .c9 {
+          background: brown;
+      }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="first">
+            <h1>First Part</h1>
+        </div>
+
+        <div class="second">
+            <h1>Second Part</h1>
+        </div>
+
+    </div>
+    <br /><br /> <br /><br /> <br /><br /> <br /><br /> <br /><br />
+    <!--Task2-->
+    <div class="gallery">
+
+        <img src="m.jpg" alt="" width="20">
+        <img src="aa.jpg" alt="">
+        <img src="bb.jpg" alt="">
+        <img src="cc.jpg" alt="">
+        <img src="dd.jpg" alt="">
+        <img src="m.jpg" alt="">
+        <img src="bb.jpg" alt="">
+        <img src="cc.jpg" alt="">
+
+    </div>
+    <!-- Task 3 -->
+
+    <div class="boxes">
+
+        <div class="box b1">1</div>
+        <div class="box b2">2</div>
+        <div class="box b3">3</div>
+        <div class="box b4">4</div>
+
+        <div class="box b5">5</div>
+        <div class="box b6">6</div>
+        <div class="box b7">7</div>
+        <div class="box b8">8</div>
+
+        <div class="box b9">9</div>
+        <div class="box b10">10</div>
+
+    </div>
+    <!-- Task 4 Grid -->
+
+    <div class="grid-box">
+        <div class="black"></div>
+        <div class="orange"></div>
+        <div class="green"></div>
+        <div class="blue"></div>
+    </div>
+    <!-- Task 5 -->
+
+    <div class="colors">
+
+        <div class="item c1">1</div>
+        <div class="item c2">2</div>
+        <div class="item c3">3</div>
+        <div class="item c4">4</div>
+        <div class="item c5">5</div>
+        <div class="item c6">6</div>
+        <div class="item c7">7</div>
+        <div class="item c8">8</div>
+        <div class="item c9">9</div>
+
+    </div>
+</body>
+</html>
