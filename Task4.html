@@ -1,0 +1,266 @@
+﻿
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Task5</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body {
+           
+            font-family: "Times New Roman", serif;
+            width: 800px;
+            margin: 20px auto;
+        }
+        .banner {
+            background: #8B4513;
+            height: 220px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .banner h1 {
+                font-size: 50px;
+                font-weight: bold;
+                color: black;
+            }
+        /* Navigation */
+
+        nav {
+            background: #D9A04A;
+            padding: 20px;
+        }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 35px;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: green;
+                font-weight: bold;
+                font-size: 20px;
+            }
+            
+        /* Content */
+
+        main {
+            background: #D9A04A;
+            padding: 20px 20px 20px 0;
+            
+            min-height: 300px;
+        }
+
+            main h2 {
+                font-size: 45px;
+                margin-bottom: 25px;
+
+            }
+
+
+            main h5 {
+                font-size: 22px;
+                margin-bottom: 20px;
+                color: maroon;
+            }
+        p {
+            font-size: 22px;
+            color: maroon;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+            .copyright{
+                color:black;
+            }
+            /*2*/
+        .register-section {
+            background: #9ec7f5;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-box {
+            width: 350px;
+            background: white;
+            padding: 25px;
+            border-radius:20px;
+            text-align: center;
+            
+        }
+            .form-box form {
+                text-align: left;
+                font-size: 20px;
+               
+            }
+            .form-box label {
+                display: block;
+                margin-bottom: 5px;
+                color: cornflowerblue;
+            }
+            .form-box input {
+                width: 100%;
+                height: 30px;
+                margin-bottom: 12px;
+                color: cornflowerblue;
+            }
+            .form-box button {
+                display: block;
+                margin: 10px auto 0;
+                padding: 10px 25px;
+                color: White;
+                background-color:royalblue;
+            }
+        h1 {
+            font-size: 30px;
+            color: cornflowerblue;
+           
+        }
+        p {
+            font-size: 15px;
+            color:cornflowerblue;
+            padding:15px ,0;
+        }
+        /*3*/
+        .contact-section {
+            height: 600px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-box {
+            width: 600px;
+            background: #25B4F5;
+            padding: 30px;
+            border-radius: 20px;
+        }
+            .contact-box h2 {
+                color: white;
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            .contact-box input {
+                width: 100%;
+                height: 35px;
+                margin-bottom: 15px;
+            }
+            .contact-box textarea {
+                width: 100%;
+                height: 150px;
+                margin-bottom: 15px;
+            }
+            .contact-box button {
+                background: #0D6EFD;
+                color: white;
+                border: none;
+                padding: 10px 25px;
+                border-radius: 8px;
+                margin-right:6px;
+                margin-bottom:15px;
+            }
+    </style>
+   
+</head>
+<body>
+    <!-- Banner -->
+    <header class="banner">
+        <h1>THIS IS MY BANNER TEXT</h1>
+    </header>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">INFO</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#">HUBPAGES</a></li>
+        </ul>
+    </nav>
+    <!-- Content -->
+    <main>
+        <h2>This Is My Paragraph Header</h2>
+
+        <p>
+            This is where I am going to put useful and informative text about my website.
+        </p>
+
+        <p>
+            This is where I am can place even more information about my website.
+        </p>
+
+        <p class="copyright">
+            This is where I can place a copyright logo like this &copy;
+        </p>
+    </main>
+    <!-- 2-->
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <section class="register-section">
+
+        <div class="form-box">
+            <h1>CODEWITHRANDOM</h1>
+            <br>
+
+
+            <p>Thank you for Being with me</p>
+            <form>
+
+                <label>Name</label>
+                <input type="text">
+
+                <label>Email</label>
+                <input type="email">
+
+                <label>Password</label>
+                <input type="password">
+
+                <label>Repeat Password</label>
+                <input type="password">
+
+                <button>Register</button>
+
+            </form>
+
+        </div>
+
+    </section>
+    <!-- 3-->
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <section class="contact-section">
+
+        <div class="contact-box">
+
+            <h2>Contact Us</h2>
+
+            <form>
+
+                <input type="text" placeholder="Full Name">
+
+                <input type="email" placeholder="Email">
+
+                <input type="tel" placeholder="tel: XXX XXX XXXX">
+
+                <textarea placeholder="Your Message Here..."></textarea>
+
+                <button>Send</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
